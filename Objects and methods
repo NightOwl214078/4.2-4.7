@@ -1,0 +1,431 @@
+import java.util.Scanner;
+public class Project{
+    //to make a typewritter effect
+    public static void typeWriter (String s)
+    {
+        for (int i = 0; i < s.length(); i++)
+        {
+            System.out.print(s.charAt(i));
+            try {
+                Thread.sleep(6);
+            } catch(InterruptedException ex) {
+                Thread.currentThread().interrupt();
+            }
+        }
+        System.out.print("\n");
+    }
+    //main here
+    public static void main(String[] args){
+        int a[]=new int[5];
+        a[0]=1;  
+        a[1]=2;  
+        a[2]=3;  
+        a[3]=4;  
+        a[4]=5;  
+        for(int i = 0; i < a.length;i++){
+            System.out.print("Ping...");
+            System.out.println(a[i]);  
+        }
+        typeWriter("Ping 5 out of 5. Ping successful!");
+        try{
+            Thread.sleep(9000);
+        } 
+        catch(InterruptedException ex){
+            Thread.currentThread().interrupt();
+        }
+        String b = "b";
+        String c = "c";
+        String d = "d";
+        String e = "e";
+        String f = "f";
+        String g = "g";
+        String h = "h";
+        String j = "j";
+        Scanner sc = new Scanner(System.in);
+        typeWriter("It is time to play guess that image!!! \nThe purpose of this game is to see wheather\nyou can guess what image is being displayed\n \nYour options\n [b] = seems legit meme\n [c] = lennin face");
+        typeWriter("\n [d] = double donald\n [f] = fancy choice\n [g] = aww jeez meme\n\n Enter one of these choices: ");
+        String name = sc.next();  
+        for(int i = 0; i < 10; i++){
+            if (name.equals(b)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){ 
+                    typeWriter("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄");  
+                    typeWriter("▌▄─────────────────────────────▄▐");  
+                    typeWriter("▌───────────────────────────────▐"); 
+                    typeWriter("▌──▄▀▀▄──▄▀▀──▄▀▀──█▄─▄█──▄▀▀▄──▐");  
+                    typeWriter("▌──█─────█────█────█─█─█──█─────▐"); 
+                    typeWriter("▌───▀▀▄──█▀▀──█▀▀──█───█───▀▀▄──▐");  
+                    typeWriter("▌─────█──█────█────█───█─────█──▐"); 
+                    typeWriter("▌──▀▄▄▀──▀▄▄──▀▄▄──█───█──▀▄▄▀──▐");  
+                    typeWriter("▌───────────────────────────────▐"); 
+                    typeWriter("▌───────────────────────────────▐");  
+                    typeWriter("▌──█────▄▀▀──▄▀▀▀▄───▀───▀▀█▀▀──▐");
+                    typeWriter("▌──█────█────█──────▀█▀────█────▐");  
+                    typeWriter("▌──█────█▀▀──█──▀█───█─────█────▐");
+                    typeWriter("▌──█────█────█───█───█─────█────▐");  
+                    typeWriter("▌──█▄▄──▀▄▄──▀▄▄▄▀──▄█▄────█────▐"); 
+                    typeWriter("▌───────────────────────────────▐");
+                    typeWriter("▌▀─────────────────────────────▀▐");  
+                    typeWriter("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n");
+                }
+            }
+            else if (name.equals(c)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("───█───▄▀█▀▀█▀▄▄───▐█──────▄▀█▀▀█▀▄▄");
+                    typeWriter("──█───▀─▐▌──▐▌─▀▀──▐█─────▀─▐▌──▐▌─█▀");
+                    typeWriter("─▐▌──────▀▄▄▀──────▐█▄▄──────▀▄▄▀──▐▌");
+                    typeWriter("─█────────────────────▀█────────────█");
+                    typeWriter("▐█─────────────────────█▌───────────█");
+                    typeWriter("▐█─────────────────────█▌───────────█");
+                    typeWriter("─█───────────────█▄───▄█────────────█");
+                    typeWriter("─▐▌───────────────▀███▀────────────▐▌");
+                    typeWriter("──█──────────▀▄───────────▄▀───────█");
+                    typeWriter("───█───────────▀▄▄▄▄▄▄▄▄▄▀────────█\n");
+                }
+            }
+            else if (name.equals(d)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("──────────────────────────────────\t──────────────────────────────────");
+                    typeWriter("───────────────▀█▄█▀──────────────\t───────────────▀█▄█▀──────────────");
+                    typeWriter("────────▄█████▄─███───────────────\t────────▄█████▄─███───────────────");
+                    typeWriter("──────▄████████████▄██████▄───────\t──────▄████████████▄██████▄───────");
+                    typeWriter("──────██████████████████████──────\t──────██████████████████████──────");
+                    typeWriter("──────██████████████████████──────\t──────██████████████████████──────");
+                    typeWriter("──────██████████████████████──────\t──────██████████████████████──────");
+                    typeWriter("──────█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█──────\t──────█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█──────");
+                    typeWriter("──────██████████████████████──────\t──────██████████████████████──────");
+                    typeWriter("────▄█▀▀──────────────────▀▀█▄────\t────▄█▀▀──────────────────▀▀█▄────");
+                    typeWriter("──▄█▀────────────────────────▀█▄──\t──▄█▀────────────────────────▀█▄──");
+                    typeWriter("─█▀────▄▀▀▀▀▄────────▄▀▀▀▀▄────▀█─\t─█▀────▄▀▀▀▀▄────────▄▀▀▀▀▄────▀█─");
+                    typeWriter("─█────█──▄▄──█─▄▀▀▄─█──▄▄──█────█─\t─█────█──▄▄──█─▄▀▀▄─█──▄▄──█────█─");
+                    typeWriter("─█────█─████─██░░░░██─████─█────█─\t─█────█─████─██░░░░██─████─█────█─");
+                    typeWriter("██──▄▄███████▀░░░░░░▀███████▄▄──██\t██──▄▄███████▀░░░░░░▀███████▄▄──██");
+                    typeWriter("█──▀█░░░░░░░░░░▄▄▄▄░░░░░░░░░░█▀──█\t█──▀█░░░░░░░░░░▄▄▄▄░░░░░░░░░░█▀──█");
+                    typeWriter("█───▀█▀▄▄▄▄▄▄▀▀░░░░▀▀▄▄▄▄▄▄▀█▀───█\t█───▀█▀▄▄▄▄▄▄▀▀░░░░▀▀▄▄▄▄▄▄▀█▀───█");
+                    typeWriter("█────▀▄░░░░░░░░▄▄▄▄░░░░░░░░▄▀────█\t█────▀▄░░░░░░░░▄▄▄▄░░░░░░░░▄▀────█");
+                    typeWriter("██─────▀▀▀▀▀▀▀▀────▀▀▀▀▀▀▀▀─────██\t██─────▀▀▀▀▀▀▀▀────▀▀▀▀▀▀▀▀─────██");
+                    typeWriter("─█──────────────────────────────█─\t─█──────────────────────────────█─");
+                    typeWriter("─█▄────────────────────────────▄█─\t─█▄────────────────────────────▄█─");
+                    typeWriter("──█▄──────────────────────────▄█──\t──█▄──────────────────────────▄█──");
+                    typeWriter("───█▄────────────────────────▄█───\t───█▄────────────────────────▄█───");
+                    typeWriter("──────────────────────────────────\t──────────────────────────────────\n");
+                }
+            }
+            else if (name.equals(e)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+                    typeWriter("░░░░░░░▄▄▀▀▀▀▀▀▀▀▀▀▄▄█▄░░░░▄░░░░█░░░░░░░");
+                    typeWriter("░░░░░░█▀░░░░░░░░░░░░░▀▀█▄░░░▀░░░░░░░░░▄░");
+                    typeWriter("░░░░▄▀░░░░░░░░░░░░░░░░░▀██░░░▄▀▀▀▄▄░░▀░░");
+                    typeWriter("░░▄█▀▄█▀▀▀▀▄░░░░░░▄▀▀█▄░▀█▄░░█▄░░░▀█░░░░");
+                    typeWriter("░▄█░▄▀░░▄▄▄░█░░░▄▀▄█▄░▀█░░█▄░░▀█░░░░█░░░");
+                    typeWriter("▄█░░█░░░▀▀▀░█░░▄█░▀▀▀░░█░░░█▄░░█░░░░█░░░");
+                    typeWriter("██░░░▀▄░░░▄█▀░░░▀▄▄▄▄▄█▀░░░▀█░░█▄░░░█░░░");
+                    typeWriter("██░░░░░▀▀▀░░░░░░░░░░░░░░░░░░█░▄█░░░░█░░░");
+                    typeWriter("██░░░░░░░░░░░░░░░░░░░░░█░░░░██▀░░░░█▄░░░");
+                    typeWriter("██░░░░░░░░░░░░░░░░░░░░░█░░░░█░░░░░░░▀▀█▄");
+                    typeWriter("██░░░░░░░░░░░░░░░░░░░░█░░░░░█░░░░░░░▄▄██");
+                    typeWriter("░██░░░░░░░░░░░░░░░░░░▄▀░░░░░█░░░░░░░▀▀█▄");
+                    typeWriter("░▀█░░░░░░█░░░░░░░░░▄█▀░░░░░░█░░░░░░░▄▄██");
+                    typeWriter("░▄██▄░░░░░▀▀▀▄▄▄▄▀▀░░░░░░░░░█░░░░░░░▀▀█▄");
+                    typeWriter("░░▀▀▀▀░░░░░░░░░░░░░░░░░░░░░░█▄▄▄▄▄▄▄▄▄██");
+                    typeWriter("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+                }
+            }
+            else if(name.equals(f)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("░░░░░░░░▄▄▄███░░░░░░░░░░░░░░░░░░░░");
+                    typeWriter("░░░▄▄██████████░░░░░░░░░░░░░░░░░░░");
+                    typeWriter("░███████████████░░░░░░░░░░░░░░░░░░");
+                    typeWriter("░▀███████████████░░░░░▄▄▄░░░░░░░░░");
+                    typeWriter("░░░███████████████▄███▀▀▀░░░░░░░░░");
+                    typeWriter("░░░░███████████████▄▄░░░░░░░░░░░░░");
+                    typeWriter("░░░░▄████████▀▀▄▄▄▄▄░▀░░░░░░░░░░░░");
+                    typeWriter("▄███████▀█▄▀█▄░░█░▀▀▀░█░░▄▄░░░░░░░");
+                    typeWriter("▀▀░░░██▄█▄░░▀█░░▄███████▄█▀░░░▄░░░");
+                    typeWriter("░░░░░█░█▀▄▄▀▄▀░█▀▀▀█▀▄▄▀░░░░░░▄░▄█");
+                    typeWriter("░░░░░█░█░░▀▀▄▄█▀░█▀▀░░█░░░░░░░▀██░");
+                    typeWriter("░░░░░▀█▄░░░░░░░░░░░░░▄▀░░░░░░▄██░░");
+                    typeWriter("░░░░░░▀█▄▄░░░░░░░░▄▄█░░░░░░▄▀░░█░░");
+                    typeWriter("░░░░░░░░░▀███▀▀████▄██▄▄░░▄▀░░░░░░");
+                    typeWriter("░░░░░░░░░░░█▄▀██▀██▀▄█▄░▀▀░░░░░░░░");
+                    typeWriter("░░░░░░░░░░░██░▀█▄█░█▀░▀▄░░░░░░░░░░");
+                    typeWriter("░░░░░░░░░░█░█▄░░▀█▄▄▄░░█░░░░░░░░░░");
+                    typeWriter("░░░░░░░░░░█▀██▀▀▀▀░█▄░░░░░░░░░░░░░");
+                    typeWriter("░░░░░░░░░░░░▀░░░░░░░░░░░▀░░░░░░░░░");
+                }
+            }
+            else if(name.equals(g)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("                                                                                                          ");          
+                    typeWriter("                                                                o+-`                                ");
+                    typeWriter("                                                         -o/:-` .os/.                               ");
+                    typeWriter("                                                         `/oyys/.`:so:`                             ");
+                    typeWriter("                                                    `.--:::::/syy+.`/s+.                            ");
+                    typeWriter("                                                    .osoooosyhyhhyy+-:so.                           ");
+                    typeWriter("                                        `-/+/```   .::///+++++syhdhyy++s+.                          ");
+                    typeWriter("                                     `-/ossoooo+-  .//++++++ossosshdhysos/`                         ");
+                    typeWriter("                                    `/sysyysssss+`       `://:://-.:shhsso:`                        ");
+                    typeWriter("                                   `oyyyyysssso-`   ``..-oosyydmmd:`./yhys+.                        ");
+                    typeWriter("                                  `ohhysssso+/-``.:/+ooosso+:-:+++y/``+hhyo/`                       ");
+                    typeWriter("                               -+.:yyysys+//o+-.:osssssooooo+/:-.`..``/hhhso/-`                     ");
+                    typeWriter("                               .hsoyyyhyydmms:-/syyysssssooooo++//::--/shhyso+/-`                   ");
+                    typeWriter("                                /hsyyhhydNmh::oyyyyyyysssooooo+++++////+ohhyss++/-`                 ");
+                    typeWriter("                                `oyyyhhydNo+oyhhhhhhyyysssoooo+++++/////+oyhyysoo+/:.`              ");
+                    typeWriter("                                 /hyh+hyyysydddddhhhhhyyssooo+++++++/////+oyhhyysoo+/:-.`           ");
+                    typeWriter("                                `+yyho+hhhdmdddddddhdhhyyssoo+++++////////+syyhyyyyso+//:.`         ");
+                    typeWriter("                                -yyyddydmmmmdddddddhdhhhyyyso+++/////+++oooyyyyy/syyso+++//-``      ");
+                    typeWriter("                               -yysydmmmmmmdddddddddddhhyyso+/+osyyyhhhhdyssyyss/.-+ssso++++/:.`    ");
+                    typeWriter("                              :syssydNmmmmmddddddddhhyyssyyyhdmmNmhhyyyyhysoosoo+. `-+ssso+++++/:-.`");
+                    typeWriter("                             :yyssshmmmmmdddddhhhyysyyhmmNNmdhhyyyyyyyyyhhso++o++-   `.:osooo+++++//");
+                    typeWriter("                            -yysosyhddddddhhyyyyyhdmmmdhhhhyssooooosyyyyhhss+/++/.      `-/ooooo++++");
+                    typeWriter("                          `/yysoosyhhhhhhyyyyhhhhddmyyssssssooooooooyyyhhhss+///.         ``.:/+oooo");
+                    typeWriter("                        `:shysooso/hhhdddhhyhhhhhhdhsssssooosoooooooyhhhdyso+//-`             ``-/+o");
+                    typeWriter("                     `-+yhdhsooso.`yhddmmdhhyhhhhhhhysooooooosoooooohhhhhso++:-`                  `.");
+                    typeWriter("                   `-oyhyyyssoo+`  -hdmmmdhhhyyhhhhhhysoooooooossssyhhhdyso//-`                     ");
+                    typeWriter("                `./syhhyyssooo:`    /hdmmdhhhyyyyyhyyyyysssooooossyhhhhhso+/-`    `                 ");
+                    typeWriter("              .:syhhyyyssooo/.      `:yhdddhhhhyyssyyyhhhyyyyyyyyhhhhhhso//::::::-.                 ");
+                    typeWriter("           `:oyhhhyyyssooo/-`  ```..-/shhdddhhhhhyysyyyhhhhhhhyhhhhhhhs+//::///-``                  ");
+                    typeWriter("         .:shhhhhysssso+-`.:/+osyyyhhhhhhhhhhhhhhhhhhyyyyyhhhhhhhhhhso+//:::-``                     ");
+                    typeWriter("       ./yhhhyyyssoo+:.`    `.:+shddddhdddddhhhyyyyyyhhyyyyyyyyyyyso+////::::-`                     ");
+                    typeWriter("    `.+yhhyyyssoo+:.`  ``.:+syhddmmmddddddddhhddddddhyyyyyssssssso+//////:::///:-.``                ");
+                    typeWriter("  `-oyhhhyyssso/-` `.-/oyhdddddddddddddddddhhhhhhddmmmdhyyssssooo++//++/::::////+++///:::--`     ```");
+                    typeWriter(" -ohhhhyyssso/.`.:/oyyhhdhhhhhhhhhhhddddmmNdhyhhhhhhhdhhyhysssoo++++++/:::::/::///+++//:---.--://+os");
+                    typeWriter("+yhhhhyssoso//+osyyyyyhhhhhhhddmmmNNmmmmNmhyyyyyyyyyyyysssooo+++++///::::::://-----::/+oosssyyyyyyyy");
+                    typeWriter("dhhyysssssssssyssyyyyyyyyhhddmdmNNNmmmmmdyyyyyyyyyssssssoo++////::::::::::::/+ssssssssyyyyyyyysyssss");
+                    typeWriter("hhyysooosssssssssssssyyyyys+ohdmNNmmmmmhyyyyyyyysssyooooo+++/////:::::://::://+ossosssssssssssssoooo");
+                    typeWriter("hyysoooosoooossssssssso/-``+hdmmmmmmdhyyyyyyyyyyyyhd++++++++////////:::+o+//////+oossssoo+++//::-...");
+                    typeWriter("yysoooooooooooooo+/-.`   `+hhdmmdhyssssssyyyhhhhhyhd+++++++//+so////////+ooo+///+++o/:-.````        ");
+                    typeWriter("ssooooo+//:--..``       `+hhddmmddddddddddhhhhhyhhdd++++++++oooys///////+++oo++//::::-.             ");
+                    typeWriter("`-::-..`                /hhddmmmmmmmdddddhhhhhhhhddd+++++++oooooys//////++++++//:`                  ");
+                    typeWriter("                       -hhdddmmmmdddddhhddhhhhhhhhhh++++++ooooooshy+/////++++//::`                  ");
+                    typeWriter("                      `shdddddmmddddddhhddhhhhhhhhyy++++oooooooooyyyo+///+/+////:.                  ");
+                    typeWriter("                      ohddddddddddddhdhhhhhhyhyhhyysooosoooooo+oooooo++++++/////:.                  ");
+                    typeWriter("                     `shdddddddddhddhhhhhhhhhyyyyssssooooooooo+oooooo++++++/////:.                  ");
+                    typeWriter("                     .yhdddddddddddhhhhhhhhyhyyyysssosoooooo+ooooooo+++++++/////:.                  ");
+                    typeWriter("                     .yhhdddddddddhdhhhhhhyyyyyysssssoooooooooooo++++++++++/////:`                  ");
+                    typeWriter("                     `shhdddddddddddhhhhhhyyyyysssossoooooooooo+o+o++++++++////:-`                  ");
+                    typeWriter("                     `ohhddddddddddhhhhhhhyyyyssssossoooooooo+oo+++++++++++////:.                   ");
+                    typeWriter("                     `shhhdddddddddhhhhhhyyyyssssssosoooooooo+o+++++++++++////:-`                   ");
+                    typeWriter("                     .ydhhddddddddhhhhhyyyyyyssssssssoooooo+oo+++++++++++////::.                    ");
+                    typeWriter("                     /hhdhhhddhddhhhhhhhyyyyysssssssooooooo+ooo+++++++++////::-`                    ");
+                    typeWriter("                    `yddddhhhdddhhhhhhhhyyyyysssssssooooooooo++++++++++/////:-`                     ");
+                    typeWriter("                    +dmddmdhhhhdhhdhhhhhyyyysysssssooooooooo+o++++++++/////:.`                      ");
+                    typeWriter("                   /hdmmddmdhhhhhhhhhhhyyyyysyssssooooooo+oo+++++++++/////:-                        ");
+                    typeWriter("                  .hddmmmdmmdhhhhhhhhhhyyyyysssyssoooooooo+++++++++//////:-`                        ");
+                    typeWriter("                 `sddddmmdddmdhhhhhhhhhyyyyyyssssssoooooooo+++++++///////-`                         ");
+                }
+            }
+            else if(name.equals(g)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("....................................................................................................");
+                    typeWriter("..////////////////////////////////++ooooooo+++++ooosssyyyhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy:`");
+                    typeWriter("..///////////////////////////+oooo+++//////////////////+++ssyhhhhyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..////////////////////////+oo++//////////////////////////////+osyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("../////////////////////+oo+//////////////////////////////////////+shhyyhhhhhhhhhhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("../////////////////++ooo///+////+oosyyyyyyssoo++//////////////////+/oyhhhhhhhhhhhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..///////////+syhdmmmm+/////+osyyyhyhhyhhhhhhhhhhyyso+++ooossyysoo+///+yhyhhhhyyhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..//////////smmmmmmmms////+syyyhhhhhhhhhhhhhyhhhhhhhyhyyhhhhhhhhyhyyo///+yhhhhhhhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("../////////hmmmmmmmdo///oyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyhhhyhyyhyo/+dmmmdddhyhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..////////ymmmmmmmd+/+oyyhhhhhhhhhhhhhhhhhyhhhhhhhhhhhhhhhhhhhhhhhhhhyys+ymmmmmmmdhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..///////+mmmmmmmmo/+yhhyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyhyyys+sdmmmmmmmhyyhhhhhhhhhhhy-.");
+                    typeWriter("..///////ymmmmmmmd+oyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhys/ommmmmmmmhhhhhhhhhhhhhy-.");
+                    typeWriter("..//////+mmmmmmmdooyhhhhhhhhhhhhhhhhhhhhhhhhyhhhhhhhhhhhhhhhhhhhhhhhhhhhhyo+dmmmmmmmmhhhhhhhhhhhhy-.");
+                    typeWriter("..//////ymmmmmmhooyhyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyoymmmmmmmmhhhhhhhhhhhhy-.");
+                    typeWriter("..//++++ydmmmmh+oyyhyhhhhhhhhhhhhhhhhhhhyhhhhyhhhhhhhhhhhhhhyhhhyhhhhhhhhyhyommmmmmmmhhhhhhhhhhhhy-.");
+                    typeWriter("../+o+///ommmmooyhhhhhhhhyyhdmmmmmmmmmdddhhhhhhhhhhddddddmddhhhhhhhhhhhhhhhhyodmmmmmmdhyhhhhhhhhhy-.");
+                    typeWriter(".-/s////+yymdyshhhhhhhhhhhhhhhhhyso+////oshddhhhhhyhhyyyhhdddmddhyhhhhhyhhhhyo+dmmmmmmhhhhhhhhhhhy-.");
+                    typeWriter("../s////os+y+/yhhhdddddddhhdhyyoo++//////++syhhyhhys++////+oshddmdhhhhhhyyhhhhsdmmmyo+ohhhhhhhhhhy-.");
+                    typeWriter("`./o+///y+//++yyhydhhhhhhys/-.........------+/yyy:-:::://///++oshddddddddddhhhoodmd+///shhhhhhhhhy-.");
+                    typeWriter(".-/++//+h///+ohhhhdhhyyys/.................`+.s:s...........`..../yhhhhhhhhyhhs/+hh+///shhhhhhhhhy-.");
+                    typeWriter(".-//o+/+h////ohhhhdhhhyo:.`.................+./-o`................-shhyhyhhhhhy+//s+///yhhhhhhhhhy-.");
+                    typeWriter("..//++/+y////ohhyhdhhy+/.............`/s:`.-ysyy+...:.`.............oyhhhhhhyhh+//s///+hhhhhhhhhhy-.");
+                    typeWriter("..//+o/+h////+yhhhdhhs/:..............:+-..-:/o//..+h/..............:shhyhhhhhh+/+o//+shhhhhhhhhhy-.");
+                    typeWriter("..///o++d////+yhhhdhys/:.`.................//yys:...-...............-+yhhdhhhhh+/o///ohyhhhhhhhhhy-.");
+                    typeWriter("..///+o/y+////shhhdhhs//-..................oyhhh/...................-/yhhdhyhyh+/o:/ohhyhhhhhhhhhy-.");
+                    typeWriter("..////++ss////oyhhdhhhso+/:------........:odhhhdy/................../+yhhhhhhyy/++/+yhhhhhhhhhhhhy-.");
+                    typeWriter("..////+s+h/+//+yyhhhhhhyo+++///////++oosyhhdhhhhhhso+///:::::::::::++shhhhhhyys/o:+yhhhyhhhhhhhhhy-.");
+                    typeWriter("../////++ss////ohhhhhyhyyyoo++++/+++osyyhhhhhyhhhhyys+/:-------::/+oshhhhhhhhy+++/shhhhyhhhhhhhhhy-.");
+                    typeWriter("../////+o+h++//+yhhhhhhhhyyyyyyyyyyyhyhhhhhhhhhhhhhhhyyso+/////++osyyyhhhhhhho/o/ohhhhhhhhhhhhhhhy-.");
+                    typeWriter("..//////+ooy+///oyhhhhhhhyhhhhhhhhhhhhhhhhyhhhhhhhhhhhhyyyyyyyyyyhhhhyhhhhhhy/s/+hhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..///////o+oy++//oyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhy+o//yhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..////////o+ss+//+shhhhhhhhhhhhhhhhhhhhhhyhhhyyhhhyhhhhhhhhhhhhhhhhhhhhhyhyoo+/shhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("../////////+++o+///shhhhhhhhhhhhhyhyhhssyyssyyyyyyyhyhhhhhhhhhhhhhhhhhhyhyoo+/ohhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..////////////+o+//+syyhyhhhhhhhhhhdddsosso+sooos++yhhhhhhhhhhhhhhhyhyhhyoso+syyhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("../////////////+oo+//oyyhhhhhhhhhhhhdy++oo+/s+sooysymdhhhhhhhhhhhhhhhyhsoyhyhyhyhhhhhhhhhhhhhhhhhy-.");
+                    typeWriter("..///////////////++sy+//oyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyhyyyssdmmmmmdddddhhhhhyyhhhhhhhhhy-.");
+                    typeWriter("../////////++osyhddmmdho/+osyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyssydmmmmmmmmmmmmmmmmdddhhhhhhhhhy-.");
+                    typeWriter("..////+osyhdmmmmmmmmmmmmhs+++syyyhhhhhhhhhhhhhhhhhhhhhhhhhyhyyysshdmmmmmmmmmmmmmmmmmmmmmmmmddhhhhy-.");
+                    typeWriter("..//+ydmmmmmmmmmmmmmmmmmmmdhso++osyyyhhhhhhhhhhhyhhhhhhhhyyyso+hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdhy-.");
+                    typeWriter(".-/sdmmmmmmmmmmmmmmmmmmmmmmmmmdysoooooosssyyyyyyyyyyyyysoo+/-./mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdy-.");
+                    typeWriter("..ommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdhho///+++o+++ooooooo:-.....hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh-.");
+                    typeWriter("..dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh...--/:-+++++//:-:/-...+mmmy+osyhhdmmmmmmmmmmmmmmmmmmmmmmmmd-.");
+                    typeWriter(".-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm+..--..../oooo/....-/--hmmmo//////ymmmmmmmmmmmmmmmmmmmmmmmmd-.");
+                    typeWriter(".-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd:.......://///....`.-ommmmddhyyssdmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmms.......//////-.....-dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd:......///////..`..+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmy+sys.:///////:`..-dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddhyyyyh+/++//////.`.ommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdhhyhhhhhyhyyys/////:.-dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddhhyhyhhyyhyyhhyo+/////.ommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm::yyhhhhhhhhhhhhyo+/////:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd--shhhhhhhhhhhhhhy+////ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd--shhhhhhhhhhhhys+///+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh--yhhhhhhhhhhhy+////ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmh.+hhhhhhhhhhhyy+//+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm/:hhhhhhhhhyys+///ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmsymmmmmmmmhsssssssmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.");
+                    typeWriter(".:mmmmmdhysoossydmmmmmdsssdmmmmmmsssdmmmmmmmmmmmdysshmmssssssssssssdmyssssssssssshmhsssssssssssshm:.");
+                    typeWriter(".:mmmds+//+++++/+ohmmmh///hmmmmmd///ymmmmmmmmmmmd+//ymm+//++++++++/dmo///+++++++/yms++++++++/+//ym:`");
+                    typeWriter(".:mmh+//+yhdddho///smmh///hmmmmmd///ymmmmmmmmmmmd+//ymm+//sddddddddmmo//oddddddddmmdddddddho//+ymm:.");
+                    typeWriter(".:md+//odmmmmmmmy///ymh///hdddddd///ymmmmmmmmmmmd+//ymm+//smddmdddmmmo//odddddddmmmmmmmmmh+//odmmm:.");
+                    typeWriter(".:mh///hmmmmmmmmd+//omh/////////////ymmmmmmmmmmmd+//ymm///+///////dmmo//////////ymmmmmmdo//+ymmmmm:.");
+                    typeWriter(".:mh///smmmmmmmmd+//smh///ossssss///ymmmmmmmmmmmd+//smm///osssssssmmmo//+ssssssshmmmmmy+/+sdmmmmmm:.");
+                    typeWriter("`:mmo//+ymmmmmmho//+dmh///hmmmmmd///ymmmmmmhdmmmh+//ymm+//smmmmmmmmmmo//ommmmmmmmmmmho//+hmmmmmmmm:.");
+                    typeWriter(".:mmms+//+osyso/+/odmmh///hmmmmmd///ymmmmms/+oss+//+dmm+//ossssssssdmo//+ssssssssyds///+sssssssshm:.");
+                    typeWriter(".:mmmmdso++///++shmmmmh++/hmmmmmd///hmmmmmyo+///++sdmmm++//++//++//hmo++///+/+/++oh+/++/+/+///+/ym:.");
+                    typeWriter(".:dmmmmmmddhhddmmmmmmmmdddmmmmmmmddddmmmmmmmdddddmmmmmmdddddddddddddmdddddddddddddmddddddddddddddd:.");
+                    typeWriter("....................................................................................................");
+                }
+            }
+            else if(name.equals(h)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("                             `------.`        `.--:::::--`                              ```                 ");    
+                    typeWriter("`/::::::::::::-....-:::::::::::-........-:/:::----:::::/:/::-.``   `.::/:::::-.`  ``.----.`     ");
+                    typeWriter("`+...........................................................-::::::-........--:::::-....-:/.   ");
+                    typeWriter(" /:..............--........................................................................-+   ");
+                    typeWriter(" `+-..........-/+++-......................................................................./:   ");
+                    typeWriter("  `+.........:+++++-....................................................................../:    ");
+                    typeWriter("   ::.......-+++++/....................................................................../-     ");
+                    typeWriter("   +-......./++++:...............................................................::......:/     ");
+                    typeWriter("  -/........-//:-..............................................................-/++......./-    ");
+                    typeWriter("  /:........................-:://////:-....................-----...............+++:........+    ");
+                    typeWriter("  .+....................-//+/-..```..-:++/-..........-//+//:::::////:-.........:--.........+    ");
+                    typeWriter("   ./-.....://........-++-`             `-/+/....../+/-.`         `.:++:................../-    ");
+                    typeWriter("    .+..../++/......./o.                   `/o-..:o:`                 ./o:..............:/.     ");
+                    typeWriter("    .+....++/-......++`            `-:::-`   -s:/o.    ``..`            .o+............::`      ");
+                    typeWriter("    /-....--.......:s            `+yyyyyyy+.  .ys`   -oyyyyys:`          `o/.........../.       ");
+                    typeWriter("   -/..............s:            sdssdmdyshy`  y-   :dysyhhsyds`          `y-..........-+`      ");
+                    typeWriter("   /-..............s-           `yhsyNNNysyd` `s`   shssNMNhssm.           o:.........../.      ");
+                    typeWriter("   .+........--::::o+`           -yhyyyysyh/ `.s-..`-dysyhhyshy`           o/...........+.      ");
+                    typeWriter("    -/-....-//:--:+/:/.           `:ossss+. `/:---:/.-oyyyyyy+`         `.-s+///:-....:/-       ");
+                    typeWriter("     `+-...+//:.:/--.-+`              `     .+.....-+  `....`           +/-/+---:/+-..o`        ");
+                    typeWriter("      /-...+:...-oy/..o+.`                 `:o.....::                  `o...-+/.-//o..+`        ");
+                    typeWriter("     `+.....:-..--/s-..:++-.`           `.:+//:...:o+-`              `./o:.-os+-..:o..:/        ");
+                    typeWriter("     +-............/s:....:/+/:-.....-:/+/:.....-//.-/+/:.````````.-/++-..-+s-...:+-...o`       ");
+                    typeWriter("    `o..............-oo-......-:://:::-.........:-.....-:////++////:-...-/s/.....-.....o`       ");
+                    typeWriter("    `+-...............:oo:-..........................................-:os/-...........-+        ");
+                    typeWriter("     `/:................-+o+:-...................................--/oo+-..............+.        ");
+                    typeWriter("       -/-.........::......-/++o/:-........................--:/oo++:................./-         ");
+                    typeWriter("        `o.......:+++...........-/+++os+++////////+++++++y+++/-.........-/++:.......+.          ");
+                    typeWriter("        ::......-+++-................-y` ````/o--/s`     s:............/++++/.......o`          ");
+                    typeWriter("        o........::..................:y.`    /+../s     `+/.........../+++++:......./-          ");
+                    typeWriter("        +.............................://+++++-...+++++++/...........-+++++:........+.          ");
+                    typeWriter("        .+............:+++:..........................................-/+/:.........:/           ");
+                    typeWriter("         -s:........-+++++:..........--....---------....--.......................:s-            ");
+                    typeWriter("         o-:/......-+++++/....................................................../-o:            ");
+                    typeWriter("        `y  -/.....:++++/-.............................................://......o``y`           ");
+                    typeWriter("        :+  +-.....-///-............................................../++/....../- +:           ");
+                    typeWriter("        o: `o...........---...........---............................-++:........+`.s           ");
+                    typeWriter("        o-  :/::://++///:::+o//://++++/::/+++/-...-:+///////-.....-::/+///+/-...:/ `y           ");
+                    typeWriter("        :o.```+o-.```       `...../o/.`    `.odhyhds.`````.+y+///:::.``````-:/y:.``-s           ");
+                    typeWriter("         -:+s/oo                   `./+/:--++hhyhhy/+:-:///.`                 y+/y/:.           ");
+                    typeWriter("           `y.-h                       `...``:dhhd: `--.`                     h--y`             ");
+                    typeWriter("            y-.yo+++++++++++++//////////////+hhyyyh+//////////////////////////y.:s              ");
+                    typeWriter("            ++.+y+++yyyyhhhho+++ohhhhhhhhho+hhyyyyhdosddddddddo++oyyyyyhyyy++yo.o/              ");
+                    typeWriter("            .y.-h/++hmmmmmmmo/+++ddddddddd+odyyyyyydysdddddddd+//ommmmmmmmd+/h:.y.              ");
+                    typeWriter("             s:.so+/+++++++++/+/++++++++++++shhyyhhs++++++++++//+++++++++++++h-.y`              ");
+                    typeWriter("             -y.:h++/////////////////////////+shhs+/////////////////////////ss./o               ");
+                    typeWriter("              o/.+soooo+++++++++++++////+////+/++/+++++++++++++oooo+oooo+oooh:.y.               ");
+                    typeWriter("              :o../++y::::///ohsssssssssyyooooooooo+++ohyssssssoooho:::::ys/:..y`               ");
+                    typeWriter("             `o/..-s/s-      :yo++++++ooss````         /oosooooooos:    /+/+...s:               ");
+                    typeWriter("             -s.-.-h/s-      `.-//oy++y/.`              `:y::y/-.`      +++s...-y`              ");
+                    typeWriter("             ++.o-.:yy-           `y-.++                 o/.-s`         -ys+..+.++              ");
+                    typeWriter("             /+./s--y+o/.          ++.-y.               .s..o/         .+oh-.+s.:o              ");
+                    typeWriter("             .s-./oy++s+s          .y--o+               os::y.        -s+sosso-.o:              ");
+                    typeWriter("              .o/--/+s:h.           hdhdh`             `hhhdy`        -sy:+o:.-++`              ");
+                    typeWriter("               `-/+++y+/            oyosy-             :sooso          :ooy-:++-                ");
+                    typeWriter("                  ```               +o::o+             +s++s/           .-::-`                  ");
+                    typeWriter("                                    +s+o+s             y:::+o                                   ");
+                    typeWriter("                          ````     `s.  `s            `y.  `y:`  ``.--.``                       ");
+                    typeWriter("                       `/ydmddho--ymm:``:m/          `yNo-:sNMmoodNNMMMNy-                      ");
+                    typeWriter("                      `hMMMMMMMMMNMMMMNmNMN-         .dMMMMMMMMMMMMMMMMMMN.                     ");
+                    typeWriter("                      -MMMMMMMMMMMMMMMMMMm:           .dMMMMMMMMMMMMMMMMMN-                     ");
+                    typeWriter("                      `sNMMMMMMMMMMNmMMMNy`           `/sdNMhhmMMMMMMMMMd:                      ");
+                    typeWriter("                        ./osssss+:-`.+:.                   `    .-://:-`                       ");
+                }
+            }
+            else if(name.equals(j)){
+                for(int makeLoop = 0; makeLoop < 1; makeLoop++){
+                    typeWriter("-................:+ssoooooooooosso+-...:/+osssooossso:.............................................:");
+                    typeWriter("-............../ssooooooooooooooooosssssoooooooooooooss:...........................................:");
+                    typeWriter("-............/sooooooooooosssssoooooosyoooooooooooooooos:..........................................-");
+                    typeWriter("-...........osooooooosssssssossssssssosyooooooooooooooooy-........................................./");
+                    typeWriter("-..........soooooooysooooooooooooooossshssssssssssssssssss/:.......................................-");
+                    typeWriter("-.........soooooooooooooooooooosssssssssyyooooooooooooooooooso+.....................................");
+                    typeWriter("-........soooooooooooooooossssyyysssssssssyssosssssyyyyyyyyyyssy/-..................................");
+                    typeWriter("-....-/ossoooooooooooosssssssysosoo///+osyssyysssssyssyyyyoosyyssy/.................................");
+                    typeWriter("-...+sooyoooooooooosyysssyo:-omsdMNNh.   `-:+sos+:-:dmoMNmNs `.++oy+................................");
+                    typeWriter("-..sooooyooooooooyysssso:`  :MMmmm/dMh       //`   hMMhMyoNM/     `s................................");
+                    typeWriter("--sooooooooooooooossssy:`   /MMMMMMMMh       /     hMMMMMMMM:     -o................................");
+                    typeWriter(":soooooooooooooooooooossso/:.omNMMNd+` `.-:+ss::-...ymNNMNd+::/+oy+.................................");
+                    typeWriter("yoooooooooooooooooooooosssssssoossoooossssssyooooossssssssooooos/-..................................");
+                    typeWriter("sooooooooooooooooooooooooooosssssssssssyysooooooooooooooooooss+.....................................");
+                    typeWriter("yooooooooooooooooooooooooooooooooossssssooooooosssyyssssssyo........................................");
+                    typeWriter("yoooooooooooooooooooooooooooooossssoooooooooooooooosoooooooss:......................................");
+                    typeWriter("yoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooos+.....................................");
+                    typeWriter("yooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooos/....................................");
+                    typeWriter("soooooooooooooooooooosssssssooooooooooooooooooooooooooooooooooos....................................");
+                    typeWriter("yooooooooooooooooosysssooosssssssssssssooooooooooooooooooossssysy:..................................");
+                    typeWriter("soooooooooooooooosyooosyyssysssoooooossssssssssssssssssssssooooso-..................................");
+                    typeWriter("sooooooooooooooooysoooooooooossssssssssyssssssssssssssssssyssy+-....................................");
+                    typeWriter("sooooooooooooooyoosyyssssssssyysssooooooossssssssssssssssoooos+.....................................");
+                    typeWriter("osooooooooooooosyssooooooooooooossssssyssssyyyyssssssssssssso/......................................");
+                    typeWriter("/syssooooooooooooossooooooooooooooooooooooooooooosssssyo/-..........................................");
+                    typeWriter("hhhyyyssssoooooooooooooooooooooooooooooooooooooooosso/-.............................................");
+                    typeWriter("hyyyhhhyyysssssssssssoooooooooooooooooooooooosso+/:.................................................");
+                    typeWriter("hyyyyyyyhhhyyysssoosssssssssssssssssssssssshhh/.....................................................");
+                }
+            }
+            else
+            {
+                typeWriter("Invalid Input! Try again!");
+            }
+            typeWriter("Thank you for playing! hope you had a laugh.");
+            typeWriter("The compiler will now bark at you:");
+            try
+            {
+                Thread.sleep(1800);
+            } 
+            catch(InterruptedException ex)
+            {
+                Thread.currentThread().interrupt();
+            }               
+            for(;;){
+                typeWriter("───█───▄▀█▀▀█▀▄▄───▐█──────▄▀█▀▀█▀▄▄");
+                typeWriter("──█───▀─▐▌BA ▐▌─▀▀──▐█─────▀─▐▌ RK ▐▌─█▀");
+                typeWriter("─▐▌──────▀▄▄▀──────▐█▄▄──────▀▄▄▀──▐▌");
+                typeWriter("─█────────────────────▀█────────────█");
+                typeWriter("▐█─────────────────────█▌───────────█");
+                typeWriter("▐█─────────────────────█▌───────────█");
+                typeWriter("─█───────────────█▄───▄█────────────█");
+                typeWriter("─▐▌───────────────▀███▀────────────▐▌");
+                typeWriter("──█──────────▀▄───────────▄▀───────█");
+                typeWriter("───█───────────▀▄▄▄▄▄▄▄▄▄▀────────█\n");
+            }
+        }
+    }
+}
+
+/*import java.util.regex.*;  
+class RegexExample2{  
+public static void main(String args[]){  
+System.out.println(Pattern.matches(".s", "as"));//true (2nd char is s)  
+System.out.println(Pattern.matches(".s", "mk"));//false (2nd char is not s)  
+System.out.println(Pattern.matches(".s", "mst"));//false (has more than 2 char)  
+System.out.println(Pattern.matches(".s", "amms"));//false (has more than 2 char)  
+System.out.println(Pattern.matches("..s", "mas"));//true (3rd char is s)  
+}
+}  */
+// want to create a project similar to that of a regex crossword puzzle so that when you get it right in the end of each question a meme would pop out encoraging you to do it agai or etc.
+// create interpolation 
+
